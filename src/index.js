@@ -5,9 +5,11 @@ import "./index.css";
 import App from "./App";
 import "bootstrap/dist/css/bootstrap.css";
 import "font-awesome/css/font-awesome.css";
+import createHashHistory from "history/createHashHistory";
+const hashHistory = createHashHistory({ basename: process.env.PUBLIC_URL });
 
 ReactDOM.render(
-  <BrowserRouter>
+  <BrowserRouter history={hashHistory}>
     <App />
   </BrowserRouter>,
   document.getElementById("root")
