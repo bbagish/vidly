@@ -7,8 +7,8 @@ import Customers from "./components/customers";
 import NavBar from "./components/navbar";
 import MovieForm from "./components/movieForm";
 import LoginForm from "./components/loginForm";
-import "./App.css";
 import RegisterForm from "./components/registerForm";
+import "./App.css";
 
 class App extends Component {
   render() {
